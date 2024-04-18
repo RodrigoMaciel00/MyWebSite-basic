@@ -1,0 +1,91 @@
+/* Importando a fonte Work Sans */
+@import url('https://fonts.google.com/specimen/Work+Sans');
+
+/* Definindo as cores */
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+}
+
+/* Estilos gerais */
+body {
+    background-color: purple; /* Mudança de cor de fundo */
+    font-family: "Work Sans", sans-serif;
+    margin: 0; /* Removendo margem padrão */
+    padding: 0; /* Removendo preenchimento padrão */
+}
+
+/* Estilo do container principal */
+.border {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+/* Estilo do título FAQ */
+h1 {
+    color: var(--dark-purple); /* Mudança de cor do título */
+    display: flex; /* Utilizando flexbox para alinhar a imagem e o texto */
+    align-items: center; /* Alinhando verticalmente */
+}
+
+h1 img {
+    margin-right: 10px; /* Adicionando espaço entre a imagem e o texto */
+}
+
+/* Estilo das perguntas */
+.question p {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer; /* Adicionando estilo de cursor */
+    transition: color 0.3s; /* Adicionando transição de cor */
+}
+
+.question p:hover {
+    color: purple; /* Mudança de cor ao passar o mouse */
+}
+
+
+/* Estilo das respostas */
+.answer {
+    display: none;
+    color: var(--dark-purple); /* Mudança de cor da resposta */
+    font-size: 15px;
+    font-weight: 200;
+    padding-left: 20px;
+}
+
+/* Estilo dos ícones de toggle */
+.toggle-icon {
+    margin-left: 5px; /* Adicionando espaço à esquerda dos ícones */
+}
+
+/* Estilo dos ícones de plus e minus */
+.plus-icon,
+.minus-icon {
+    display: flex;
+    margin-bottom: 15px;
+    width: 20px; /* Definindo largura fixa */
+    height: 20px; /* Definindo altura fixa */
+    cursor: pointer; /* Alterando cursor ao passar por cima */
+}
+
+/* Estilo dos ícones minus inicialmente ocultos */
+.minus-icon {
+    display: none;
+}
+footer {
+    color: var(--white);
+    font-weight: 300;
+    border-radius: 8px;
+    background-color: purple;
+    padding: 20px;
+    text-align: center;
+}
+
