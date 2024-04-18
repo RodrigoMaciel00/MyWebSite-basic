@@ -1,0 +1,61 @@
+@import url('https://fonts.google.com/specimen/Inter');
+body {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+.border {
+    border-radius: 24px;
+    padding: 40px 10px 10px 10px;
+    background-color: hsl(0, 0%, 12%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+    width: 100px;
+}
+h1{
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+}
+p, a{
+    color: white;
+    font-weight: 100;
+    font-size: 12px;
+}
+.location{
+    color: hsl(75, 94%, 57%);
+}
+.link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px; /* Largura máxima do contêiner */
+    margin: 12px;
+}
+
+.link {
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: hsl(0, 0%, 20%);
+    transition: background-color 0.3s;
+    text-align: center;
+    margin: 5px;
+    padding: 10px 30px; 
+    width: 250px;
+}
+
+.link:hover {
+    background-color: hsl(75, 94%, 57%);
+}
+
+
